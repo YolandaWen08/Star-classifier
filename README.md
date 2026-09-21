@@ -1,7 +1,7 @@
-# Star-classifier
-The star-classifier is a code to classify stars based on MK system.
+### Star-classifier
+<p>The star-classifier is a code to classify stars based on MK system.</p>
 
-# How to use the classifier
+## How to use the classifier
 
 Before applying the code, you have to download the template.
 
@@ -23,7 +23,7 @@ print(result)
 ```
 
 
-# The principle and the outcome of the code
+## The principle and the outcome of the code
 
 Spectral classification, sometimes referred to as stellar classification, is a general term for the sorting of stars based on their spectral information (Maiz et al., 2024). By examining a star’s spectrum, we can estimate the basic properties, including temperature, luminosity, velocity, and so on, thus classifying them into different types. The widely used Morgan-Keenan System (MK system) classifies stars primarily according to their temperature, and later, scientists added numerical indicators of luminosity and temperature to the system. The MK system divides stars into seven classes — O, B, A, F, G, K, and M—from hottest to coldest. Over time, additional classes have been added to the MK system, such as L and T, which correspond to even cooler stars (Campbell, Josephine, 2022). As people discovered more and more stars, it became difficult to classify each star by hand. Therefore, I wrote code to sort them into 16 classes based on their spectrum.
 
