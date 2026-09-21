@@ -1,5 +1,5 @@
-### Star-classifier
-<p>The star-classifier is a code to classify stars based on MK system.</p>
+#### Star-classifier
+The star-classifier is a code to classify stars based on MK system.
 
 ## How to use the classifier
 
@@ -25,9 +25,9 @@ print(result)
 
 ## The principle and the outcome of the code
 
-Spectral classification, sometimes referred to as stellar classification, is a general term for the sorting of stars based on their spectral information [Maiz et al., 2024](https://arxiv.org/abs/2410.07301?utm_source=). By examining a star’s spectrum, we can estimate the basic properties, including temperature, luminosity, velocity, and so on, thus classifying them into different types. The widely used Morgan-Keenan System (MK system) classifies stars primarily according to their temperature, and later, scientists added numerical indicators of luminosity and temperature to the system. The MK system divides stars into seven classes — O, B, A, F, G, K, and M—from hottest to coldest. Over time, additional classes have been added to the MK system, such as L and T, which correspond to even cooler stars [Campbell, Josephine, 2022](https://www.ebsco.com/research-starters/history/morgan-keenan-classification-system-mk-or-mkk?utm_source=). As people discovered more and more stars, it became difficult to classify each star by hand. Therefore, I wrote code to sort them into 16 classes based on their spectrum.
+Spectral classification, sometimes referred to as stellar classification, is a general term for the sorting of stars based on their spectral information ([Maiz et al., 2024](https://arxiv.org/abs/2410.07301?utm_source=)). By examining a star’s spectrum, we can estimate the basic properties, including temperature, luminosity, velocity, and so on, thus classifying them into different types. The widely used Morgan-Keenan System (MK system) classifies stars primarily according to their temperature, and later, scientists added numerical indicators of luminosity and temperature to the system. The MK system divides stars into seven classes — O, B, A, F, G, K, and M—from hottest to coldest. Over time, additional classes have been added to the MK system, such as L and T, which correspond to even cooler stars ([Campbell, Josephine, 2022](https://www.ebsco.com/research-starters/history/morgan-keenan-classification-system-mk-or-mkk?utm_source=)). As people discovered more and more stars, it became difficult to classify each star by hand. Therefore, I wrote code to sort them into 16 classes based on their spectrum.
 
-The classification uses the [spectral cross-correlation templates](https://classic.sdss.org/dr5/algorithms/spectemplates/) released by SDSS as a classification reference. The first sixteen templates are based on the MK system, First, the dictionary is composed of 23 classes of stars. The first sixteen stars are classified by the MK system, and some of them are transition stars, such as F/A stars. The remaining are magnetic white dwarfs, carbon stars, white dwarfs, and low-metallicity K subdwarfs.(In this classification process, only the first 16 templates will be used)
+The classification uses the ([spectral cross-correlation templates](https://classic.sdss.org/dr5/algorithms/spectemplates/)) released by SDSS as a classification reference. The first sixteen templates are based on the MK system, First, the dictionary is composed of 23 classes of stars. The first sixteen stars are classified by the MK system, and some of them are transition stars, such as F/A stars. The remaining are magnetic white dwarfs, carbon stars, white dwarfs, and low-metallicity K subdwarfs.(In this classification process, only the first 16 templates will be used)
 
 The second part is for reading the spectrum of the star that is intended to be classified. These are labeled as fluxTarget and waveTarget. 
 
