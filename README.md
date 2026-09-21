@@ -1,4 +1,4 @@
-#### Star-classifier
+### Star-classifier
 The star-classifier is a code to classify stars based on MK system.
 
 ## How to use the classifier
